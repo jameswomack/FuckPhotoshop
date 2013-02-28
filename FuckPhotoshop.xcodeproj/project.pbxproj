@@ -21,6 +21,8 @@
 		BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AB916DEE1EA00182B6A /* CCViewController.m */; };
 		BD1D2AC116DEE1F900182B6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */; };
 		BD1D2AC416DF07BC00182B6A /* FPView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AC316DF07BC00182B6A /* FPView.m */; };
+		BD9DE22716DF1B4A005AFB3E /* UANoisyGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE22616DF1B4A005AFB3E /* UANoisyGradientLayer.m */; };
+		BD9DE22916DF1C08005AFB3E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9DE22816DF1C08005AFB3E /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BD1D2AC216DF07BC00182B6A /* FPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPView.h; sourceTree = "<group>"; };
 		BD1D2AC316DF07BC00182B6A /* FPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPView.m; sourceTree = "<group>"; };
+		BD9DE22516DF1B4A005AFB3E /* UANoisyGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANoisyGradientLayer.h; sourceTree = "<group>"; };
+		BD9DE22616DF1B4A005AFB3E /* UANoisyGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UANoisyGradientLayer.m; sourceTree = "<group>"; };
+		BD9DE22816DF1C08005AFB3E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9DE22916DF1C08005AFB3E /* CoreImage.framework in Frameworks */,
 				BD1D2AC116DEE1F900182B6A /* QuartzCore.framework in Frameworks */,
 				BD1D2A9B16DEE1EA00182B6A /* UIKit.framework in Frameworks */,
 				BD1D2A9D16DEE1EA00182B6A /* Foundation.framework in Frameworks */,
@@ -81,6 +87,7 @@
 		BD1D2A9916DEE1EA00182B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD9DE22816DF1C08005AFB3E /* CoreImage.framework */,
 				BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */,
 				BD1D2A9A16DEE1EA00182B6A /* UIKit.framework */,
 				BD1D2A9C16DEE1EA00182B6A /* Foundation.framework */,
@@ -101,6 +108,8 @@
 				BD1D2AA116DEE1EA00182B6A /* Supporting Files */,
 				BD1D2AC216DF07BC00182B6A /* FPView.h */,
 				BD1D2AC316DF07BC00182B6A /* FPView.m */,
+				BD9DE22516DF1B4A005AFB3E /* UANoisyGradientLayer.h */,
+				BD9DE22616DF1B4A005AFB3E /* UANoisyGradientLayer.m */,
 			);
 			path = FuckPhotoshop;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 				BD1D2AAB16DEE1EA00182B6A /* CCAppDelegate.m in Sources */,
 				BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */,
 				BD1D2AC416DF07BC00182B6A /* FPView.m in Sources */,
+				BD9DE22716DF1B4A005AFB3E /* UANoisyGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +333,7 @@
 				BD1D2ABF16DEE1EA00182B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

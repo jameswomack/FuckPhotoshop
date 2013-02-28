@@ -10,6 +10,7 @@
 
 #import "FPView.h"
 
+#import "UANoisyGradientLayer.h"
 
 @interface FPView ()
 @property BOOL wasLandscapeAfterLastDetectedOrientationChange;
@@ -44,11 +45,19 @@
     [UIDevice.currentDevice beginGeneratingDeviceOrientationNotifications];
     
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object:nil];
+    
+    ((UANoisyGradientLayer*)self.layer).noiseOpacity = .2f;
 
 #if FP_VISUAL_DEBUG == true
     self.layer.borderWidth = 3.f;
     self.layer.borderColor = UIColor.redColor.CGColor;
 #endif
+}
+
+
++ (Class)layerClass
+{
+    return UANoisyGradientLayer.class;
 }
 
 
@@ -125,7 +134,7 @@
     
     size_t locationCount = 2;
     
-    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:NO];
+    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:YES];
     
     [super drawRect:rect];
 }
