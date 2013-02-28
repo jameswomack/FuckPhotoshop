@@ -128,8 +128,8 @@
 {        
     CGFloat colorList[] =
     {
-        0, 0, 0 , .5,
-        0, 0, 0 , 0
+        0, 0, 0, .5,
+        0, 0, 0, 0
     };
     
     size_t locationCount = 2;
