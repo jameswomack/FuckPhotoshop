@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD1D2A9B16DEE1EA00182B6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D2A9A16DEE1EA00182B6A /* UIKit.framework */; };
+		BD1D2A9D16DEE1EA00182B6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D2A9C16DEE1EA00182B6A /* Foundation.framework */; };
+		BD1D2A9F16DEE1EA00182B6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D2A9E16DEE1EA00182B6A /* CoreGraphics.framework */; };
+		BD1D2AA516DEE1EA00182B6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AA316DEE1EA00182B6A /* InfoPlist.strings */; };
+		BD1D2AA716DEE1EA00182B6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AA616DEE1EA00182B6A /* main.m */; };
+		BD1D2AAB16DEE1EA00182B6A /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AAA16DEE1EA00182B6A /* CCAppDelegate.m */; };
+		BD1D2AAD16DEE1EA00182B6A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AAC16DEE1EA00182B6A /* Default.png */; };
+		BD1D2AAF16DEE1EA00182B6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AAE16DEE1EA00182B6A /* Default@2x.png */; };
+		BD1D2AB116DEE1EA00182B6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AB016DEE1EA00182B6A /* Default-568h@2x.png */; };
+		BD1D2AB416DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AB216DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard */; };
+		BD1D2AB716DEE1EA00182B6A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AB516DEE1EA00182B6A /* MainStoryboard_iPad.storyboard */; };
+		BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AB916DEE1EA00182B6A /* CCViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD1D2A9716DEE1EA00182B6A /* FuckPhotoshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckPhotoshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1D2A9A16DEE1EA00182B6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD1D2A9C16DEE1EA00182B6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD1D2A9E16DEE1EA00182B6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD1D2AA216DEE1EA00182B6A /* FuckPhotoshop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FuckPhotoshop-Info.plist"; sourceTree = "<group>"; };
+		BD1D2AA416DEE1EA00182B6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD1D2AA616DEE1EA00182B6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD1D2AA816DEE1EA00182B6A /* FuckPhotoshop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckPhotoshop-Prefix.pch"; sourceTree = "<group>"; };
+		BD1D2AA916DEE1EA00182B6A /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		BD1D2AAA16DEE1EA00182B6A /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		BD1D2AAC16DEE1EA00182B6A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BD1D2AAE16DEE1EA00182B6A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BD1D2AB016DEE1EA00182B6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BD1D2AB316DEE1EA00182B6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BD1D2AB616DEE1EA00182B6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BD1D2AB816DEE1EA00182B6A /* CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
+		BD1D2AB916DEE1EA00182B6A /* CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD1D2A9416DEE1EA00182B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1D2A9B16DEE1EA00182B6A /* UIKit.framework in Frameworks */,
+				BD1D2A9D16DEE1EA00182B6A /* Foundation.framework in Frameworks */,
+				BD1D2A9F16DEE1EA00182B6A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD1D2A8E16DEE1EA00182B6A = {
+			isa = PBXGroup;
+			children = (
+				BD1D2AA016DEE1EA00182B6A /* FuckPhotoshop */,
+				BD1D2A9916DEE1EA00182B6A /* Frameworks */,
+				BD1D2A9816DEE1EA00182B6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD1D2A9816DEE1EA00182B6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D2A9716DEE1EA00182B6A /* FuckPhotoshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1D2A9916DEE1EA00182B6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D2A9A16DEE1EA00182B6A /* UIKit.framework */,
+				BD1D2A9C16DEE1EA00182B6A /* Foundation.framework */,
+				BD1D2A9E16DEE1EA00182B6A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1D2AA016DEE1EA00182B6A /* FuckPhotoshop */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D2AA916DEE1EA00182B6A /* CCAppDelegate.h */,
+				BD1D2AAA16DEE1EA00182B6A /* CCAppDelegate.m */,
+				BD1D2AB216DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard */,
+				BD1D2AB516DEE1EA00182B6A /* MainStoryboard_iPad.storyboard */,
+				BD1D2AB816DEE1EA00182B6A /* CCViewController.h */,
+				BD1D2AB916DEE1EA00182B6A /* CCViewController.m */,
+				BD1D2AA116DEE1EA00182B6A /* Supporting Files */,
+			);
+			path = FuckPhotoshop;
+			sourceTree = "<group>";
+		};
+		BD1D2AA116DEE1EA00182B6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D2AA216DEE1EA00182B6A /* FuckPhotoshop-Info.plist */,
+				BD1D2AA316DEE1EA00182B6A /* InfoPlist.strings */,
+				BD1D2AA616DEE1EA00182B6A /* main.m */,
+				BD1D2AA816DEE1EA00182B6A /* FuckPhotoshop-Prefix.pch */,
+				BD1D2AAC16DEE1EA00182B6A /* Default.png */,
+				BD1D2AAE16DEE1EA00182B6A /* Default@2x.png */,
+				BD1D2AB016DEE1EA00182B6A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD1D2A9616DEE1EA00182B6A /* FuckPhotoshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1D2ABD16DEE1EA00182B6A /* Build configuration list for PBXNativeTarget "FuckPhotoshop" */;
+			buildPhases = (
+				BD1D2A9316DEE1EA00182B6A /* Sources */,
+				BD1D2A9416DEE1EA00182B6A /* Frameworks */,
+				BD1D2A9516DEE1EA00182B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuckPhotoshop;
+			productName = FuckPhotoshop;
+			productReference = BD1D2A9716DEE1EA00182B6A /* FuckPhotoshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD1D2A8F16DEE1EA00182B6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "James Womack";
+			};
+			buildConfigurationList = BD1D2A9216DEE1EA00182B6A /* Build configuration list for PBXProject "FuckPhotoshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD1D2A8E16DEE1EA00182B6A;
+			productRefGroup = BD1D2A9816DEE1EA00182B6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD1D2A9616DEE1EA00182B6A /* FuckPhotoshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD1D2A9516DEE1EA00182B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1D2AA516DEE1EA00182B6A /* InfoPlist.strings in Resources */,
+				BD1D2AAD16DEE1EA00182B6A /* Default.png in Resources */,
+				BD1D2AAF16DEE1EA00182B6A /* Default@2x.png in Resources */,
+				BD1D2AB116DEE1EA00182B6A /* Default-568h@2x.png in Resources */,
+				BD1D2AB416DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard in Resources */,
+				BD1D2AB716DEE1EA00182B6A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD1D2A9316DEE1EA00182B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1D2AA716DEE1EA00182B6A /* main.m in Sources */,
+				BD1D2AAB16DEE1EA00182B6A /* CCAppDelegate.m in Sources */,
+				BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD1D2AA316DEE1EA00182B6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1D2AA416DEE1EA00182B6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BD1D2AB216DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1D2AB316DEE1EA00182B6A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BD1D2AB516DEE1EA00182B6A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1D2AB616DEE1EA00182B6A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD1D2ABB16DEE1EA00182B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD1D2ABC16DEE1EA00182B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD1D2ABE16DEE1EA00182B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckPhotoshop/FuckPhotoshop-Prefix.pch";
+				INFOPLIST_FILE = "FuckPhotoshop/FuckPhotoshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BD1D2ABF16DEE1EA00182B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckPhotoshop/FuckPhotoshop-Prefix.pch";
+				INFOPLIST_FILE = "FuckPhotoshop/FuckPhotoshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD1D2A9216DEE1EA00182B6A /* Build configuration list for PBXProject "FuckPhotoshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1D2ABB16DEE1EA00182B6A /* Debug */,
+				BD1D2ABC16DEE1EA00182B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1D2ABD16DEE1EA00182B6A /* Build configuration list for PBXNativeTarget "FuckPhotoshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1D2ABE16DEE1EA00182B6A /* Debug */,
+				BD1D2ABF16DEE1EA00182B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD1D2A8F16DEE1EA00182B6A /* Project object */;
+}
