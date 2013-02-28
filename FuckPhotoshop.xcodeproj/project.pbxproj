@@ -19,6 +19,8 @@
 		BD1D2AB416DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AB216DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard */; };
 		BD1D2AB716DEE1EA00182B6A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D2AB516DEE1EA00182B6A /* MainStoryboard_iPad.storyboard */; };
 		BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AB916DEE1EA00182B6A /* CCViewController.m */; };
+		BD1D2AC116DEE1F900182B6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */; };
+		BD1D2AC416DF07BC00182B6A /* FPView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D2AC316DF07BC00182B6A /* FPView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		BD1D2AB616DEE1EA00182B6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		BD1D2AB816DEE1EA00182B6A /* CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
 		BD1D2AB916DEE1EA00182B6A /* CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
+		BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BD1D2AC216DF07BC00182B6A /* FPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPView.h; sourceTree = "<group>"; };
+		BD1D2AC316DF07BC00182B6A /* FPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1D2AC116DEE1F900182B6A /* QuartzCore.framework in Frameworks */,
 				BD1D2A9B16DEE1EA00182B6A /* UIKit.framework in Frameworks */,
 				BD1D2A9D16DEE1EA00182B6A /* Foundation.framework in Frameworks */,
 				BD1D2A9F16DEE1EA00182B6A /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		BD1D2A9916DEE1EA00182B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */,
 				BD1D2A9A16DEE1EA00182B6A /* UIKit.framework */,
 				BD1D2A9C16DEE1EA00182B6A /* Foundation.framework */,
 				BD1D2A9E16DEE1EA00182B6A /* CoreGraphics.framework */,
@@ -92,6 +99,8 @@
 				BD1D2AB816DEE1EA00182B6A /* CCViewController.h */,
 				BD1D2AB916DEE1EA00182B6A /* CCViewController.m */,
 				BD1D2AA116DEE1EA00182B6A /* Supporting Files */,
+				BD1D2AC216DF07BC00182B6A /* FPView.h */,
+				BD1D2AC316DF07BC00182B6A /* FPView.m */,
 			);
 			path = FuckPhotoshop;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 				BD1D2AA716DEE1EA00182B6A /* main.m in Sources */,
 				BD1D2AAB16DEE1EA00182B6A /* CCAppDelegate.m in Sources */,
 				BD1D2ABA16DEE1EA00182B6A /* CCViewController.m in Sources */,
+				BD1D2AC416DF07BC00182B6A /* FPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
