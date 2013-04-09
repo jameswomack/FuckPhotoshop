@@ -7,17 +7,73 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-
 #import "FPView.h"
-
 #import "UANoisyGradientLayer.h"
+#import "FPTypes.h"
+
 
 @interface FPView ()
+{
+    UIColor *_topColor, *_bottomColor;
+}
 @property BOOL wasLandscapeAfterLastDetectedOrientationChange;
 @end
 
 
+
 @implementation FPView
+
+@dynamic topColor, bottomColor;
+
+
+void FPDynamic(NSObject *a, NSObject *b, FPDynamicBlock block)
+{
+    if (![a isEqual:b])
+    {
+        a = b;
+        block();
+    }
+}
+
+
+void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
+{
+    FPDynamic(a, b, ^{
+        [self setNeedsDisplay];
+    });
+}
+
+
+- (void)setTopColor:(UIColor *)topColor
+{
+    FPVisualDynamic(self, _topColor, topColor);
+}
+
+
+- (void)setBottomColor:(UIColor *)bottomColor
+{
+    FPVisualDynamic(self, _bottomColor, bottomColor);
+}
+
+
+- (UIColor *)bottomColor
+{
+    if (!_bottomColor)
+    {
+        _bottomColor = UIColor.blackColor;
+    }
+    return _bottomColor;
+}
+
+
+- (UIColor *)topColor
+{
+    if (!_topColor)
+    {
+        _topColor = UIColor.grayColor;
+    }
+    return _topColor;
+}
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -41,7 +97,7 @@
 
 
 - (void)initialization
-{
+{    
     [UIDevice.currentDevice beginGeneratingDeviceOrientationNotifications];
     
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object:nil];
@@ -124,17 +180,40 @@
 }
 
 
+- (FPGradient)gradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
+{
+    FPGradient gradient;
+    [topColor getRed:&gradient.red0 green:&gradient.green0 blue:&gradient.blue0 alpha:&gradient.alpha0];
+    [bottomColor getRed:&gradient.red1 green:&gradient.green1 blue:&gradient.blue1 alpha:&gradient.alpha1];
+    return gradient;
+}
+
+
 - (void)drawRect:(CGRect)rect
 {        
-    CGFloat colorList[] =
-    {
-        0, 0, 0, .5,
-        0, 0, 0, 0
-    };
-    
     size_t locationCount = 2;
     
-    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:YES];
+    FPGradient gradient = [self gradientFromTopColor:self.topColor bottomColor:self.bottomColor];
+    
+    FPColorList colorList =
+    {
+        gradient.red0,
+        gradient.green0,
+        gradient.blue0,
+        gradient.alpha0,
+        gradient.red1,
+        gradient.green1,
+        gradient.blue1,
+        gradient.alpha1
+    };
+    
+    uint i = 8;
+    while (i--)
+    {
+        malloc(colorList[i]);
+    }
+    
+    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:NO];
     
     [super drawRect:rect];
 }

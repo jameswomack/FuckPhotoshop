@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FPView : UIView
+typedef void(^FPDynamicBlock)(void);
 
+@interface FPView : UIView
+extern void FPDynamic(NSObject *a, NSObject *b, FPDynamicBlock block);
+extern void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b);
+@property (assign, readwrite) UIColor *topColor;
+@property (assign, readwrite) UIColor *bottomColor;
 @end

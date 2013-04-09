@@ -46,6 +46,7 @@
 		BD1D2AC016DEE1F900182B6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BD1D2AC216DF07BC00182B6A /* FPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPView.h; sourceTree = "<group>"; };
 		BD1D2AC316DF07BC00182B6A /* FPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPView.m; sourceTree = "<group>"; };
+		BD7F49CC1714DC2E00BD9E1F /* FPTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPTypes.h; sourceTree = "<group>"; };
 		BD9DE22516DF1B4A005AFB3E /* UANoisyGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANoisyGradientLayer.h; sourceTree = "<group>"; };
 		BD9DE22616DF1B4A005AFB3E /* UANoisyGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UANoisyGradientLayer.m; sourceTree = "<group>"; };
 		BD9DE22816DF1C08005AFB3E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -103,6 +104,7 @@
 				BD1D2AAA16DEE1EA00182B6A /* CCAppDelegate.m */,
 				BD1D2AB216DEE1EA00182B6A /* MainStoryboard_iPhone.storyboard */,
 				BD1D2AB516DEE1EA00182B6A /* MainStoryboard_iPad.storyboard */,
+				BD7F49CC1714DC2E00BD9E1F /* FPTypes.h */,
 				BD1D2AB816DEE1EA00182B6A /* CCViewController.h */,
 				BD1D2AB916DEE1EA00182B6A /* CCViewController.m */,
 				BD1D2AA116DEE1EA00182B6A /* Supporting Files */,
