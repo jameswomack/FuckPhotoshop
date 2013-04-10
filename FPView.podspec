@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
+  s.framework    = 'QuartzCore'
   s.platform     = :ios, '5.1'
   s.source_files = '*.{h,m}'
   s.requires_arc = true
