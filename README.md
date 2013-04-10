@@ -1,8 +1,9 @@
-FuckPhotoshop
-=============
+Fuck Photoshop View (FPView)
+============================
 
-Pretty gradient and other layer effects for UIViews in iOS.
+Pretty gradient and other layer effects in a UIView subclass.
 
 * Linear gradient
 * Radial gradient
 * Noise
+* Colors
