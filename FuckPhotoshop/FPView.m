@@ -76,6 +76,19 @@ void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
 }
 
 
+- (id)initWithTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor radial:(BOOL)radial frame:(CGRect)frame
+{
+    if ((self = [super initWithFrame:frame]))
+    {
+        self.topColor = topColor;
+        self.bottomColor = bottomColor;
+        self.radial = radial;
+        [self initialization];
+    }
+    return self;
+}
+
+
 - (id)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame]))
@@ -213,7 +226,7 @@ void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
         malloc(colorList[i]);
     }
     
-    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:NO];
+    [self drawGradientWithColors:colorList locations:NULL count:locationCount radial:self.radial];
     
     [super drawRect:rect];
 }
