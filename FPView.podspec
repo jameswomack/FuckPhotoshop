@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "FPView"
   s.version      = "0.1"
   s.summary      = "Pretty noise, linear and radial gradient view for iOS."
-  s.homepage     = "https://github.com/subdigital/BSModalPickerView"
+  s.homepage     = "https://github.com/jameswomack"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "James Womack" => "james@nblgstr.com" }
