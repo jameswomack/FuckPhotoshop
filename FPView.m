@@ -179,7 +179,7 @@ void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
     }
     else
     {
-        CGContextDrawLinearGradient(context, gradient, CGPointMake(0,self.bounds.size.height/2), CGPointMake(self.bounds.size.width,self.bounds.size.height/2), kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
+        CGContextDrawLinearGradient(context, gradient, CGPointMake(self.bounds.size.width/2,0), CGPointMake(self.bounds.size.width/2,self.bounds.size.height), kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
     }
     
     CGGradientRelease(gradient);
