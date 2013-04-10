@@ -1,5 +1,5 @@
-Fuck Photoshop View (FPView)
-============================
+FPView
+======
 
 Pretty gradient and other layer effects in a UIView subclass.
 
