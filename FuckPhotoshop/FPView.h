@@ -15,10 +15,11 @@ typedef void(^FPDynamicBlock)(void);
 extern void FPDynamic(NSObject *a, NSObject *b, FPDynamicBlock block);
 extern void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b);
 
-- (id)initWithTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor radial:(BOOL)radial frame:(CGRect)frame;
+- (id)initWithTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor radial:(BOOL)radial noiseOpacity:(CGFloat)noiseOpacity frame:(CGRect)frame;
 
 @property (assign, readwrite) UIColor *topColor;
 @property (assign, readwrite) UIColor *bottomColor;
 @property BOOL radial;
+@property CGFloat noiseOpacity;
 
 @end

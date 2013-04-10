@@ -76,13 +76,14 @@ void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
 }
 
 
-- (id)initWithTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor radial:(BOOL)radial frame:(CGRect)frame
+- (id)initWithTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor radial:(BOOL)radial noiseOpacity:(CGFloat)noiseOpacity frame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame]))
     {
         self.topColor = topColor;
         self.bottomColor = bottomColor;
         self.radial = radial;
+        self.noiseOpacity = noiseOpacity;
         [self initialization];
     }
     return self;
@@ -115,7 +116,7 @@ void FPVisualDynamic(FPView *self, NSObject *a, NSObject *b)
     
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object:nil];
     
-    ((UANoisyGradientLayer*)self.layer).noiseOpacity = .2f;
+    ((UANoisyGradientLayer*)self.layer).noiseOpacity = self.noiseOpacity;
 
 #if FP_VISUAL_DEBUG == true
     self.layer.borderWidth = 3.f;
